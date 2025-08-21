@@ -1,0 +1,138 @@
+@font-face {
+    font-family: "Norse-bold";
+    src: url(fonts/Norse-Bold.otf);
+}
+
+:root {
+    --side-width: 40vw;
+    --grey-color: #f7f9fa;
+  }
+
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8em;
+}
+
+.img-wraper {
+    max-width: var(--side-width);               
+    overflow: hidden;     
+    min-height: 100vh;
+}
+
+#green-pic {
+    width: auto;  
+    min-height: 100vh;
+    object-position: left center;
+    display: block;
+}
+
+.odin {
+    font-family: "Norse-bold", sans-serif;
+    Position: absolute;
+    top: 20vh;
+    color: white;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    width: 100%;
+    max-width: var(--side-width); 
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.odin-logo {
+    width: 7vw;
+}
+
+.text {
+  font-size: 9vw;
+  display: flex;
+  align-items: center;
+  height: 100%;  
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    width: calc(100vw - var(--side-width));
+    flex: 1;
+    
+}
+  
+.header {
+    display: flex;
+    align-items: center;
+    height: 50vh;
+    justify-content: center;
+    background-color: var(--grey-color);
+    font-family: helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 2em;
+    
+}
+
+.sgn-form {
+    background-color: white;
+    display: flex;
+    height: 50vh;
+    flex-direction: column;
+    color: #2d3745;
+    font-family: sans-serif;
+    padding: 1.5rem;
+}
+
+.account {
+   height: 50vh;
+   background-color: var(--grey-color);
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;  /* allows wrapping to next line */
+    gap: 1.5rem;
+    
+  }
+
+.form-group {
+    flex: 1 1 calc(50% - 3rem); /* two items per row */
+    display: flex;
+    flex-direction: column; /* label over input */
+    color: #2d3745;
+    font-family: sans-serif;
+    font-weight: 700;
+    gap: 0.2rem;
+  }
+
+.form-header {
+    display: flex;
+    color: #2d3745;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+}  
+
+.form-group input {
+    border: 1px solid #ebedf0;
+    border-radius: 0.3rem;
+    height: 2rem;
+}
+
+.acc {
+    padding: 0.5rem 2rem;
+    background-color: hsl(92, 21%, 35%);
+    margin: 1.5rem auto;
+    color: white;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0.2rem 0.2rem 0.2rem grey;
+}
+
+.account {
+    padding: 1.5rem;
+}
